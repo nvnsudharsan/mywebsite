@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a2e;
+  padding: 1rem 2rem;
+}
+.logo {
+  color: #8a2be2;
+  font-size: 1.5rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  align-items: center;
+}
+
+.nav-links li a {
+  font-size: 1.75rem; /* Increase font size */
+  font-weight: 600;   /* Optional: make them bold */
+  color: #5bc0ff; /* Use your theme variable or a custom color */
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--color-sky-blue); /* Optional hover effect */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5bc0ff;
+  font-weight: bold;
+}
+.nav-links a:hover {
+  color: #b388eb;
+}
+.logo-image {
+  height: 50px; 
+  width: auto;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "react-portfolio",
+  "name": "mywebsite",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -14,8 +14,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages --dotfiles --user 'Naveen Sudharsan <nvnsudharsan@gmail.com>' -d build"
   },
   "browserslist": {
     "production": [
@@ -28,5 +28,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://nvnsudharsan.github.io/mywebsite"
 }

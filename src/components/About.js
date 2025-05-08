@@ -28,7 +28,7 @@ function About() {
           <ul>
             <li><strong>Ph.D. in Environmental Science and Engineering</strong>, <a href="https://www.iitb.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology Bombay</a></li>
             <li><strong>M.Tech in Water Resources Engineering</strong>, <a href="https://vnit.ac.in/" target="_blank" rel="noopener noreferrer">Visvesvaraya National Institute of Technology Nagpur</a></li>
-            <li><strong>B.Tech in Civil Engineering</strong>, <a href="https://www.mgu.ac.in/" target="_blank" rel="noopener noreferrer">Mahatma Gandhi University</a></li>
+            <li><strong>B.Tech in Civil Engineering</strong>, <a href="https://www.mgu.ac.in/" target="_blank" rel="noopener noreferrer">Mahatma Gandhi University, Kottayam, Kerala</a></li>
           </ul>
 
           <h3>Experience</h3>

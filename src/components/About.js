@@ -17,7 +17,7 @@ function About() {
           </p>
 
           <p>
-            My academic background includes a Ph.D. in Environmental Science and Engineering from IIT Bombay, where I focused on heatwave and precipitation extremes across India. I have over a decade of experience in research and teaching, and I actively collaborate with government agencies, urban planners, and fellow scientists to translate cutting-edge climate science into practical solutions.
+            My academic background includes a Ph.D. in Environmental Science and Engineering from IIT Bombay, where I focused on heatwave and precipitation extremes across India. I have over a decade of experience in research and teaching, and I actively collaborate with government agencies and communities to translate cutting-edge climate science into practical solutions.
           </p>
 
           <p>

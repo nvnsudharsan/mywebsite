@@ -1,2 +1,2 @@
 # My Personal Website
-nvnsudharsan.github.io
+www.naveens.info

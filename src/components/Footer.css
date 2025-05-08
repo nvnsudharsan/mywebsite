@@ -2,23 +2,39 @@
   background-color: #1a1a2e;
   color: #dce8f2;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-icons {
   margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
 .footer-icons a {
   color: #5bc0ff;
-  margin: 0 0.5rem;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.4rem);
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .footer-icons a:hover {
   color: #8a2be2;
 }
 
+@media (max-width: 400px) {
+  .footer {
+    padding: 1rem 0.5rem;
+  }
+
+  .footer-icons {
+    gap: 0.5rem;
+  }
+}

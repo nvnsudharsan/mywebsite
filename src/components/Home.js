@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Section.css';
 
-const videos = ['/videos/home1.mp4', '/videos/home2.mp4', '/videos/home3.mp4','/videos/home4.mp4'];
+const videos = [
+  `${process.env.PUBLIC_URL}/videos/home1.mp4`,
+  `${process.env.PUBLIC_URL}/videos/home2.mp4`,
+  `${process.env.PUBLIC_URL}/videos/home3.mp4`,
+];
 const keywords = [
   'Applications of AI/ML in Weather and Climate',
   'Heatwaves',

@@ -1,2 +1,2 @@
 # My Personal Website
-www.naveens.info
+view it at www.naveens.info

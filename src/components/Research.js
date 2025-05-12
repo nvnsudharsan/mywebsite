@@ -12,40 +12,52 @@ const projects = [
     link: 'https://github.com/nvnsudharsan/SOLWEIG-GPU'
   },
   {
-    title: 'Comparison of AI and Physics based models for Hurricane Track Prediction at Realtime',
-    description: 'Improving hurricane track prediction with deep learning.',
-    image: `${process.env.PUBLIC_URL}/images/hurricane.png`,
+    title: 'Comparison of AI and Physics based models for Hurricane Track Prediction',
+    description: 'Compare different AI models for the track predictions in the Gulf coast',
+    image: `${process.env.PUBLIC_URL}/images/hurricane_AI.gif`,
     link: '/research/hurricane'
   },
   {
     title: 'Heat Risk Assessment',
-    description: 'High-resolution flood prediction using coupled models.',
+    description: 'Non-paramatric heat risk assessment based on UTCI for CONUS',
     image: `${process.env.PUBLIC_URL}/images/risk.png`,
-    link: '/research/flood'
+    link: '/research/heatrisk'
   },
   {
     title: 'Projection of Heatwaves',
-    description: 'Future risk assessment of heatwaves using downscaled climate projections.',
+    description: 'Future risk assessment of heatwaves using downscaled climate projections. The warming scenarios are bias corrected using Q-Q mapping',
     image: `${process.env.PUBLIC_URL}/images/heatwave_pdf.png`,
-    link: '/research/flood'
+    link: '/research/heatwave_projection'
   },
   {
     title: 'Hurricane Precipitation Climatology',
-    description: 'Historical patterns of rainfall associated with hurricanes in the Gulf region.',
+    description: 'Analysis of historical storms over Gulf of America to develop precipitation climatology from the last 20 years. We used IMERG GPM precipitation and hurrciane tracks from HURDAT2',
     image: `${process.env.PUBLIC_URL}/images/hurricane_clim.png`,
-    link: '/research/flood'
+    link: '/research/hurrciane_climatology'
   },
   {
     title: 'Coastal Risk Assessment',
-    description: 'Evaluating compound coastal hazards due to surge and rainfall.',
-    image: `${process.env.PUBLIC_URL}/images/hurricane_clim.png`,
-    link: '/research/flood'
+    description: 'Coastal risk assessment for Gulf coast, considering it as a multi hazard approach, where we consider hurricane, precipitation and storm surge as hazards. So this coastal risk assesment indirectly accounts for the compound floodings due to hurricanes.',
+    image: `${process.env.PUBLIC_URL}/images/hurricane_hazard.png`,
+    link: '/research/coastal_risk'
   },
   {
     title: 'Near Real-Time Forecasting of Hurricanes using AI models',
-    description: 'Operational forecasting of hurricanes using GraphCast and FuXi.',
-    image: `${process.env.PUBLIC_URL}/images/hurricane_clim.png`,
-    link: '/research/flood'
+    description: 'Near real time forecasting of hurricanes in Atlantic basin using Graphcast-Operational and compare it with HWRF and official forecast',
+    image: `${process.env.PUBLIC_URL}/images/hurriance_realtime.gif`,
+    link: 'https://berylforecast.streamlit.app/'
+  },
+  {
+    title: 'Evaluation of Reflective Pavement (Cool Pavement) for its effectivness in mitigating urban over heating',
+    description: 'We evaluate the performance of cool pavement for mitigating the urban over heating. We installed multiple HOBO sensors over the site where the City of Austin is running a pilot project using CoolSeal treatment. We measure the 2m temperature and the surafce temperature using FLIR cameras.',
+    image: `${process.env.PUBLIC_URL}/images/cool_pavement.png`,
+    link: 'https://austincoolpavement.streamlit.app/'
+  },
+  {
+    title: 'Evaluating the importance of land surface model in predicitng hurricane track',
+    description: 'We evaluated the changes in tracks due to soil moisture using HWRF and emphasised the importance of have LSM in AI models to preict and explain the tracks at higher accuracy',
+    image: `${process.env.PUBLIC_URL}/images/hurricane.png`,
+    link: 'https://austincoolpavement.streamlit.app/'
   },
 ];
 

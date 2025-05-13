@@ -27,7 +27,7 @@ body {
 }
 
 .fade-in {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .fade-out {
@@ -43,7 +43,7 @@ body {
   z-index: 2;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.55); /* improves readability */
+  background-color: rgba(0, 0, 0, 0.75); /* improves readability */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px); /* optional: for glassy effect on supported browsers */
 }

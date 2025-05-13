@@ -9,13 +9,11 @@ const videos = [
 ];
 const keywords = [
   'Applications of AI/ML in Weather and Climate',
-  'Heatwaves',
-  'Hurricanes/Tropical Cyclones',
-  'Extreme Precipitation',
-  'Floods',
-  'Compound Events',
-  'Digital Twins',
-  'Risk Assesment'
+  'Hydro-metrological Extremes',
+  'Compound Extreme Events',
+  'Digital Twins for Earth Systems',
+  'Climate Risk Assessment',
+  'Mitigation/Adaptation Strategies'
 ];
 
 function Home() {

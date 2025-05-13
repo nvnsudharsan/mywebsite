@@ -13,7 +13,8 @@
     "react-router-dom": "^6.20.1",
     "react-scripts": "^5.0.1",
     "recharts": "^2.15.3",
-    "resolve-url-loader": "^5.0.0"
+    "resolve-url-loader": "^5.0.0",
+    "typescript": "4.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,4 +41,3 @@
   },
   "homepage": "https://nvnsudharsan.github.io"
 }
-

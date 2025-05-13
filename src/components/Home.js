@@ -27,15 +27,16 @@ function Home() {
   // Video transition
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false);
+      setFade(false); // Start fading out current video
+      // Wait for fade-out duration before switching and fading in the new video
       setTimeout(() => {
         setCurrentVideo((prev) => (prev + 1) % videos.length);
-        setFade(true);
-      }, 1000);
-    }, 10000);
+        setFade(true); // Start fade-in immediately
+      }, 500); // shorter delay for a more overlapping transition
+    }, 10000); // cycle every 10 seconds
     return () => clearInterval(interval);
   }, []);
-
+  
   // Typing animation
   useEffect(() => {
     const currentWord = keywords[wordIndex];

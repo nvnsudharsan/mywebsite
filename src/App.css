@@ -39,7 +39,6 @@ body {
   z-index: 1;
 }
 
-
 .video-overlay-text {
   position: absolute;
   top: 50%;
@@ -49,11 +48,10 @@ body {
   z-index: 2;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.8); /* improves readability */
+  background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px); /* optional: for glassy effect on supported browsers */
+  backdrop-filter: blur(4px);
 }
-
 
 .video-overlay-text h1 {
   color: #8a2be2;
@@ -111,15 +109,15 @@ body {
   font-size: 0.95rem;
   color: #a9b1bd;
 }
+
 .about-section {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
-  flex: 1; 
+  flex: 1;
   flex-wrap: wrap;
 }
-
 
 .about-image {
   flex: 1;
@@ -182,26 +180,24 @@ body {
   padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-.section {
-  padding: 4rem 2rem;
-}
+
 .footer-icons a {
   color: #5bc0ff;
   margin: 0 0.5rem;
   font-size: 1.2rem;
   transition: color 0.3s ease;
-} 
+}
 
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
+.section {
+  padding: 4rem 2rem;
+}
+
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;

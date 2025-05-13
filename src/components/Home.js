@@ -7,6 +7,7 @@ const videos = [
   `${process.env.PUBLIC_URL}/videos/home3.mp4`,
   `${process.env.PUBLIC_URL}/videos/home4.mp4`,
 ];
+
 const keywords = [
   'Applications of AI/ML in Weather and Climate',
   'Hydro-metrological Extremes',
@@ -18,26 +19,21 @@ const keywords = [
 
 function Home() {
   const [currentVideo, setCurrentVideo] = useState(0);
-  const [fade, setFade] = useState(true);
   const [typedText, setTypedText] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  // Video transition
+  // Smooth video transition
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // Start fading out current video
-      // Wait for fade-out duration before switching and fading in the new video
-      setTimeout(() => {
-        setCurrentVideo((prev) => (prev + 1) % videos.length);
-        setFade(true); // Start fade-in immediately
-      }, 500); // shorter delay for a more overlapping transition
-    }, 10000); // cycle every 10 seconds
+      setCurrentVideo((prev) => (prev + 1) % videos.length);
+    }, 10000); // switch every 10 seconds
+
     return () => clearInterval(interval);
   }, []);
-  
-  // Typing animation
+
+  // Typing effect
   useEffect(() => {
     const currentWord = keywords[wordIndex];
     const typingSpeed = isDeleting ? 50 : 100;
@@ -46,6 +42,7 @@ function Home() {
       const updatedText = isDeleting
         ? currentWord.substring(0, charIndex - 1)
         : currentWord.substring(0, charIndex + 1);
+
       setTypedText(updatedText);
       setCharIndex(isDeleting ? charIndex - 1 : charIndex + 1);
 
@@ -63,17 +60,20 @@ function Home() {
   return (
     <div>
       <div className="video-container">
-        <video
-          key={videos[currentVideo]}
-          className={`fullscreen-video ${fade ? 'fade-in' : 'fade-out'}`}
-          autoPlay
-          muted
-          loop
-          preload="auto"
-        >
-          <source src={videos[currentVideo]} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {videos.map((video, index) => (
+          <video
+            key={video}
+            className={`fullscreen-video ${index === currentVideo ? 'fade-in' : 'fade-out'}`}
+            autoPlay
+            muted
+            loop
+            preload="auto"
+            style={{ zIndex: index === currentVideo ? 2 : 1 }}
+          >
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ))}
         <div className="video-overlay-text">
           <h1>Welcome to My Research World</h1>
           <p>Exploring Extreme Weather, Climate, and AI</p>
@@ -83,7 +83,7 @@ function Home() {
       <section className="section">
         <h2>Hi, I'm Naveen Sudharsan</h2>
         <p>
-          Explore my work, which is at the intersection of extreme weather, data, and artificial intelligence.
+          Explore my work at the intersection of extreme weather, data science, and AI.
         </p>
         <p>
           I am interested in: <span className="typed-keyword">{typedText}</span>

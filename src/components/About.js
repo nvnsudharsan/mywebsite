@@ -56,8 +56,8 @@ function About() {
           </ul>
           <h3>Associated Groups</h3>
           <ul>
-            <li><strong><a href="https://www.texuslab.org/" target="_blank" rel="noopener noreferrer">TExUS Lab</strong></a></li>
-            <li><strong><a href="https://www.utcitycolab.org/" target="_blank" rel="noopener noreferrer">UT City Colab</strong></a></li>
+            <li><a href="https://www.texuslab.org/" target="_blank" rel="noopener noreferrer"><strong>TExUS Lab</strong></a></li>
+            <li><a href="https://www.utcitycolab.org/" target="_blank" rel="noopener noreferrer"><strong>UT City Colab</strong></a></li>
           </ul>
         </div>
       </div>

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.6eb626ec.css",
-    "main.js": "/static/js/main.79f09789.js",
+    "main.js": "/static/js/main.3726bccf.js",
     "static/media/Naveen2.jpeg": "/static/media/Naveen2.beeea30073c945ea96f8.jpeg",
     "static/media/logo.png": "/static/media/logo.dbe4bdf25a40fe8a1222.png",
     "index.html": "/index.html",
     "main.6eb626ec.css.map": "/static/css/main.6eb626ec.css.map",
-    "main.79f09789.js.map": "/static/js/main.79f09789.js.map"
+    "main.3726bccf.js.map": "/static/js/main.3726bccf.js.map"
   },
   "entrypoints": [
     "static/css/main.6eb626ec.css",
-    "static/js/main.79f09789.js"
+    "static/js/main.3726bccf.js"
   ]
 }

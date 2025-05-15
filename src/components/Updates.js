@@ -32,8 +32,14 @@ const newsMentions = [
     date: 'May 11, 2025'
   },
   {
+    title: 'UT geoscientists utilize AI to provide daily forecasts at Paris Olympics',
+    source: 'The Daily Texan',
+    link: 'https://thedailytexan.com/2024/08/13/ut-geoscientists-utilize-ai-to-provide-daily-forecasts-at-paris-olympics/',
+    date: 'Aug 13, 2024'
+  }
+  {
     title: 'UT Austin researchers help predict local weather during 2024 Paris Olympics',
-    source: 'NSF News',
+    source: 'KUT',
     link: 'https://www.kut.org/science/2024-08-07/ut-austin-researchers-help-predict-local-weather-during-2024-paris-olympics',
     date: 'Aug 7, 2024'
   }

@@ -36,7 +36,7 @@ const newsMentions = [
     source: 'The Daily Texan',
     link: 'https://thedailytexan.com/2024/08/13/ut-geoscientists-utilize-ai-to-provide-daily-forecasts-at-paris-olympics/',
     date: 'Aug 13, 2024'
-  }
+  },
   {
     title: 'UT Austin researchers help predict local weather during 2024 Paris Olympics',
     source: 'KUT',

@@ -24,6 +24,21 @@ const updates = [
   }
 ];
 
+const newsMentions = [
+  {
+    title: 'Feel the Burn',
+    source: 'Hindustan Times',
+    link: 'https://www.pressreader.com/india/hindustan-times-lucknow/20250511/281951728708637?srsltid=AfmBOoqfnLHyEzkWSJTbsIKA3E8XSGlHC0vovMqANpx6UTBu7etgJ8-l',
+    date: 'May 11, 2025'
+  },
+  {
+    title: 'UT Austin researchers help predict local weather during 2024 Paris Olympics',
+    source: 'NSF News',
+    link: 'https://www.kut.org/science/2024-08-07/ut-austin-researchers-help-predict-local-weather-during-2024-paris-olympics',
+    date: 'Aug 7, 2024'
+  }
+];
+
 function Updates() {
   return (
     <section className="section">
@@ -39,6 +54,24 @@ function Updates() {
           >
             <div className="update-title">{update.title}</div>
             <div className="update-date">{update.date}</div>
+          </a>
+        ))}
+      </div>
+
+      <h2 style={{ fontSize: '2.5rem', marginTop: '3rem' }}>News Mentions</h2>
+      <div className="updates-container">
+        {newsMentions.map((news, index) => (
+          <a
+            key={index}
+            href={news.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="update-tile"
+          >
+            <div className="update-title">{news.title}</div>
+            <div className="update-date">
+              {news.source} &mdash; {news.date}
+            </div>
           </a>
         ))}
       </div>

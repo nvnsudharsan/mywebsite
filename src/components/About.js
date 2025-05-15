@@ -54,6 +54,10 @@ function About() {
             <li><strong>Web Development:</strong> HTML, CSS, ReactJS</li>
             <li><strong>Version Control & Platforms:</strong> Git, Linux, Windows, MacOS</li>
           </ul>
+          <h3>Associated Groups</h3>
+          <ul>
+            <li><strong><a href="https://www.texuslab.org/" target="_blank" rel="noopener noreferrer">TExUS Lab</strong></a></li>
+            <li><strong><a href="https://www.utcitycolab.org/" target="_blank" rel="noopener noreferrer">UT City Colab</strong></a></li>
         </div>
       </div>
       <div className="about-image">

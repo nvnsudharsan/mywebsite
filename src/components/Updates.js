@@ -26,7 +26,7 @@ const updates = [
 
 const newsMentions = [
   {
-    title: 'Feel the Burn',
+    title: 'Feel the Burn?',
     source: 'Hindustan Times',
     link: 'https://www.pressreader.com/india/hindustan-times-lucknow/20250511/281951728708637?srsltid=AfmBOoqfnLHyEzkWSJTbsIKA3E8XSGlHC0vovMqANpx6UTBu7etgJ8-l',
     date: 'May 11, 2025'

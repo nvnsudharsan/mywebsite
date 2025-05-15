@@ -58,6 +58,7 @@ function About() {
           <ul>
             <li><strong><a href="https://www.texuslab.org/" target="_blank" rel="noopener noreferrer">TExUS Lab</strong></a></li>
             <li><strong><a href="https://www.utcitycolab.org/" target="_blank" rel="noopener noreferrer">UT City Colab</strong></a></li>
+          </ul>
         </div>
       </div>
       <div className="about-image">

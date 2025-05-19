@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Section.css';
 import '../App.css';
-import GitHubContributionsChart from './GitHubContributionsChart';
 
 const projects = [
   {

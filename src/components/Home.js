@@ -28,8 +28,7 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentVideo((prev) => (prev + 1) % videos.length);
-    }, 12000); // switch every 10 seconds
-
+    }, 12000);
     return () => clearInterval(interval);
   }, []);
 
@@ -56,24 +55,6 @@ function Home() {
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, wordIndex]);
-  // Load GitHub Contributions widget
-// Load GitHub Contributions widget
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js';
-    script.async = true;
-    script.onload = () => {
-      if (window.GitHubCalendar) {
-        window.GitHubCalendar('.calendar', 'nvnsudharsan', { responsive: true });
-      }
-    };
-    document.body.appendChild(script);
-
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css';
-    document.head.appendChild(link);
-  }, []);
 
   return (
     <div>
@@ -107,9 +88,26 @@ function Home() {
           I am interested in: <span className="typed-keyword">{typedText}</span>
         </p>
       </section>
+
       <section className="github-section">
         <h2>GitHub Contributions</h2>
-        <div className="calendar">Loading GitHub contributions...</div>
+        <div className="github-stats-cards">
+          <img
+            src="https://ghchart.rshah.org/0099ff/nvnsudharsan"
+            alt="GitHub Contribution Chart"
+            style={{ maxWidth: '100%', marginBottom: '1rem' }}
+          />
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=nvnsudharsan&show_icons=true&theme=tokyonight"
+            alt="GitHub Stats"
+            style={{ maxWidth: '100%', borderRadius: '10px', marginBottom: '1rem' }}
+          />
+          <img
+            src="https://github-readme-streak-stats.herokuapp.com?user=nvnsudharsan&theme=dark"
+            alt="GitHub Streak"
+            style={{ maxWidth: '100%', borderRadius: '10px' }}
+          />
+        </div>
       </section>
     </div>
   );

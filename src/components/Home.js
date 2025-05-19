@@ -56,6 +56,12 @@ function Home() {
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, wordIndex]);
+  // Load GitHub Contributions widget
+  useEffect(() => {
+    if (window.GitHubCalendar) {
+      window.GitHubCalendar('.calendar', 'nvnsudharsan', { responsive: true });
+    }
+  }, []);
 
   return (
     <div>
@@ -88,6 +94,10 @@ function Home() {
         <p>
           I am interested in: <span className="typed-keyword">{typedText}</span>
         </p>
+      </section>
+      <section className="section">
+        <h2>GitHub Contributions</h2>
+        <div className="calendar">Loading GitHub contributions...</div>
       </section>
     </div>
   );

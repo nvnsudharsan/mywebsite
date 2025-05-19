@@ -92,16 +92,6 @@ function Home() {
       <section className="github-section">
         <h2>GitHub Contributions</h2>
         <div className="github-stats-cards">
-         // <img
-         //   src="https://ghchart.rshah.org/0099ff/nvnsudharsan"
-         //   alt="GitHub Contribution Chart"
-         //   style={{ maxWidth: '100%', marginBottom: '1rem' }}
-        // />
-         // <img
-         //   src="https://github-readme-stats.vercel.app/api?username=nvnsudharsan&show_icons=true&theme=tokyonight"
-         //   alt="GitHub Stats"
-         //   style={{ maxWidth: '100%', borderRadius: '10px', marginBottom: '1rem' }}
-         // />
           <img
             src="https://github-readme-streak-stats.herokuapp.com?user=nvnsudharsan&theme=dark"
             alt="GitHub Streak"

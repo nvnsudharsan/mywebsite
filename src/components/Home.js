@@ -28,7 +28,7 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentVideo((prev) => (prev + 1) % videos.length);
-    }, 10000); // switch every 10 seconds
+    }, 12000); // switch every 10 seconds
 
     return () => clearInterval(interval);
   }, []);

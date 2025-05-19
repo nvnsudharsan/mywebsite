@@ -89,16 +89,6 @@ function Home() {
         </p>
       </section>
 
-      <section className="github-section">
-        <h2>GitHub Contributions</h2>
-        <div className="github-stats-cards">
-          <img
-            src="https://github-readme-streak-stats.herokuapp.com?user=nvnsudharsan&theme=dark"
-            alt="GitHub Streak"
-            style={{ maxWidth: '100%', borderRadius: '10px' }}
-          />
-        </div>
-      </section>
     </div>
   );
 }

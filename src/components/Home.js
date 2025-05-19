@@ -58,9 +58,15 @@ function Home() {
   }, [charIndex, isDeleting, wordIndex]);
   // Load GitHub Contributions widget
   useEffect(() => {
-    if (window.GitHubCalendar) {
-      window.GitHubCalendar('.calendar', 'nvnsudharsan', { responsive: true });
-    }
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js';
+    script.async = true;
+    script.onload = () => {
+      if (window.GitHubCalendar) {
+        window.GitHubCalendar('.calendar', 'nvnsudharsan', { responsive: true });
+      }
+    };
+    document.body.appendChild(script);
   }, []);
 
   return (

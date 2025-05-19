@@ -156,7 +156,49 @@
   padding-right: 4px;
   animation: blink 0.8s infinite;
 }
+.github-section {
+  max-width: 960px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.8s ease-out;
+}
 
+.github-section h2 {
+  font-size: 1.75rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.github-section h2::before {
+  content: '📈';
+  font-size: 1.5rem;
+}
+
+.calendar {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Optional smooth animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @keyframes blink {
   0%, 100% { border-color: #5bc0ff; }
   50% { border-color: transparent; }

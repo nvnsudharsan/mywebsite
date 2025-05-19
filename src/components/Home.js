@@ -107,7 +107,7 @@ function Home() {
           I am interested in: <span className="typed-keyword">{typedText}</span>
         </p>
       </section>
-      <section className="section">
+      <section className="github-section">
         <h2>GitHub Contributions</h2>
         <div className="calendar">Loading GitHub contributions...</div>
       </section>

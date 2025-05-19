@@ -57,6 +57,7 @@ function Home() {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, wordIndex]);
   // Load GitHub Contributions widget
+// Load GitHub Contributions widget
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js';
@@ -67,6 +68,11 @@ function Home() {
       }
     };
     document.body.appendChild(script);
+
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css';
+    document.head.appendChild(link);
   }, []);
 
   return (

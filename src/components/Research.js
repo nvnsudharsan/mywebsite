@@ -26,7 +26,7 @@ const projects = [
     title: 'Projection of Heatwaves',
     description: 'Future risk assessment of heatwaves using downscaled climate projections. The warming scenarios are bias corrected using Q-Q mapping',
     image: `${process.env.PUBLIC_URL}/images/heatwave_pdf.png`,
-    link: '/research/heatwave_projection'
+    link: 'https://arxiv.org/pdf/2501.13359'
   },
   {
     title: 'Hurricane Precipitation Climatology',

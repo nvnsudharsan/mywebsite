@@ -77,7 +77,7 @@ function Research() {
               <img src={project.image} alt={project.title} />
             </div>
             <div className="tile-content">
-              <h3 style={{ fontSize: '2rem' }}>{project.title}</h3>
+              <h2 style={{ fontSize: '2rem' }}>{project.title}</h2>
               <p>{project.description}</p>
             </div>
           </Link>

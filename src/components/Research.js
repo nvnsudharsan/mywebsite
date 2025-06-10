@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: 'Hurricane Precipitation Climatology',
-    description: 'Analysis of historical storms over the Gulf of America to develop precipitation climatology from the last 20 years. We used IMERG GPM precipitation and hurrciane tracks from HURDAT2',
+    description: 'Analysis of historical storms over the Gulf of America to develop precipitation climatology from the last 20 years. We used IMERG GPM precipitation and hurrciane tracks from HURDAT2.',
     image: `${process.env.PUBLIC_URL}/images/hurricane_clim.png`,
     link: '/research/hurrciane_climatology'
   },
@@ -42,7 +42,7 @@ const projects = [
   },
   {
     title: 'Near Real-Time Forecasting of Hurricanes using AI models',
-    description: 'Near real-time forecasting of hurricanes in the Atlantic basin using Graphcast-Operational and compare it with HWRF and official forecast',
+    description: 'Near real-time forecasting of hurricanes in the Atlantic basin using Graphcast-Operational and compare it with HWRF and official forecast.',
     image: `${process.env.PUBLIC_URL}/images/hurriance_realtime.gif`,
     link: 'https://berylforecast.streamlit.app/'
   },

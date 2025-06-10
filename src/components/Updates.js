@@ -18,6 +18,11 @@ const updates = [
     link: 'https://www.linkedin.com/posts/madhavan-nair-rajeevan-38822526_tutorial-and-workshop-on-artificial-intelligence-activity-7314676934548852736-M8h_?utm_source=share&utm_medium=member_desktop&rcm=ACoAABR4ETcBIo86GV6B3vRJM_ahK6h2WgzFSKU'
   },
   {
+    title: 'Presenting our work on Digital Twins at Exploring Digital Twins: A UT-City of Austin DT Workshop',
+    date: 'June 4, 2025',
+    link: 'https://digitaltwinshowcase2025.splashthat.com/'
+  }  
+  {
     title: 'Presenting our work on Cool Pavement at Capital Area Section of the Institute of Transportation Engineers',
     date: 'May 23, 2025',
     link: 'https://www.casite.org/upcoming-events/may-meeting'

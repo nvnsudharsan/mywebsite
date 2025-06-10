@@ -21,7 +21,7 @@ const updates = [
     title: 'Presenting our work on Digital Twins at Exploring Digital Twins: A UT-City of Austin DT Workshop',
     date: 'June 4, 2025',
     link: 'https://digitaltwinshowcase2025.splashthat.com/'
-  }  
+  },  
   {
     title: 'Presenting our work on Cool Pavement at Capital Area Section of the Institute of Transportation Engineers',
     date: 'May 23, 2025',

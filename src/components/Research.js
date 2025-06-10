@@ -62,7 +62,7 @@ const projects = [
     title: 'xdownscale: super-resolution downscaling of gridded datasets using deep learning',
     description: 'xdownscale is a Python package for super-resolution downscaling of gridded datasets using deep learning. It supports a wide range of applications, including satellite observations, reanalysis data, and climate model outputs.',
     image: `${process.env.PUBLIC_URL}/images/xdownscale.png`,
-    link: 'https://austincoolpavement.streamlit.app/'
+    link: 'https://github.com/manmeet3591/xdownscale/tree/main'
   },
 ];
 

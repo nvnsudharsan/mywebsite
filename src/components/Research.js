@@ -23,6 +23,12 @@ const projects = [
     link: '/research/heatrisk'
   },
   {
+    title: 'xdownscale: super-resolution downscaling of gridded datasets using deep learning',
+    description: 'xdownscale is a Python package for super-resolution downscaling of gridded datasets using deep learning. It supports a wide range of applications, including satellite observations, reanalysis data, and climate model outputs.',
+    image: `${process.env.PUBLIC_URL}/images/xdownscale.png`,
+    link: 'https://github.com/manmeet3591/xdownscale/tree/main'
+  },
+  {
     title: 'Projection of Heatwaves',
     description: 'Future risk assessment of heatwaves using downscaled climate projections. The warming scenarios are bias corrected using Q-Q mapping.',
     image: `${process.env.PUBLIC_URL}/images/heatwave_pdf.png`,
@@ -58,12 +64,6 @@ const projects = [
     image: `${process.env.PUBLIC_URL}/images/hurricane.png`,
     link: 'https://austincoolpavement.streamlit.app/'
   },
-  {
-    title: 'xdownscale: super-resolution downscaling of gridded datasets using deep learning',
-    description: 'xdownscale is a Python package for super-resolution downscaling of gridded datasets using deep learning. It supports a wide range of applications, including satellite observations, reanalysis data, and climate model outputs.',
-    image: `${process.env.PUBLIC_URL}/images/xdownscale.png`,
-    link: 'https://github.com/manmeet3591/xdownscale/tree/main'
-  },
 ];
 
 function Research() {
@@ -77,7 +77,7 @@ function Research() {
               <img src={project.image} alt={project.title} />
             </div>
             <div className="tile-content">
-              <h2 style={{ fontSize: '2rem' }}>{project.title}</h2>
+              <h2 style={{ fontSize: '1.5rem' }}>{project.title}</h2>
               <p>{project.description}</p>
             </div>
           </Link>
